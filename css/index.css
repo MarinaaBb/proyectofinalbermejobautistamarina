@@ -1,0 +1,349 @@
+.Bloque {
+
+    width: 100%;
+
+    padding: 0 5rem 0 0;
+
+    overflow: hidden;
+
+}
+
+/* Se ha definido un ancho de 100% para este contenedor padre y con flex se ha definido la distribución y alineación del contenido, en fila y centrado */
+
+
+.Bloque-section {
+
+    width: 200%;
+    min-height: 40vw;
+
+    background-color: white;
+
+    margin: 2rem auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 2rem;
+    gap: 4rem;
+
+    animation: portfolio 20s linear infinite;
+
+}
+
+@media (max-width:800px) {
+
+    .Bloque {
+
+        display: none;
+    }
+
+}
+
+
+/* Se ha ocultado en la versión móvil la sección primera con los proyectos en movimiento*/
+
+
+
+
+@keyframes portfolio {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Se ha definido un ancho de 100% para este contenedor que contiene a los proyectos y con flex se ha establecido una colocación de estos en fila y centrados */
+
+.Bloque-article {
+
+    width: 20%;
+
+}
+
+/* Para cada contenedor individual con el proyecto se ha definido unicamente un ancho de 100% */
+
+.Bloque-img {
+
+    border-radius: 50rem;
+}
+
+.Bloque-h2{
+
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Se reduce el tamaño de la tipografía de los subtítulos de los proyectos de las imágenes y se añade un padding para separarlo de la foto */
+
+.Section {
+
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    overflow: hidden;
+
+}
+
+
+/* Se ha definido un ancho de 100% para el contenedor padre de la segunda sección y con flex se ha establecido una colocación de los dos bloques interiores en columna */
+
+
+.Section-articles--titulos {
+
+    width: 200%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    background-color: black;
+
+
+    gap: 1.3rem;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+
+    animation: proyectos 40s linear infinite;
+
+}
+
+
+@media (max-width:800px) {
+
+    .Section-articles--titulos {
+
+        display: none;
+    }
+}
+
+@keyframes proyectos {
+
+    0% {
+        transform: translateX(0);
+    }
+
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+
+}
+
+/* Se ha definido un animation linear e infinito por medio de la creación de un keyframe para crear una animación de los textos div y h3 `proyectos destacados` */
+
+
+.Section-img {
+
+    border-radius: 2rem;
+
+}
+
+.Section-div {
+
+    width: 100%;
+    min-height: 40vw;
+
+
+    background-color: white;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem auto;
+    gap: 3rem;
+}
+
+/* Se ha definido un 100% de ancho del contenedor y se ha aplicado la propiedad display flex para colocar los dos bloques en fila*/
+
+
+.Section-div--app {
+
+    border-bottom: 2px solid lightgrey;
+}
+
+
+.Section-article--h3 {
+
+    width: 100%;
+
+    margin: 0 2rem;
+
+    text-align: center;
+}
+
+/* Se ha definido un ancho de 100% y se ha utilizado margin auto para colocar el article centrado horizontalmente */
+
+@media (max-width:800px) {
+
+    .Section-articles--titulos {
+
+        display: none;
+    }
+}
+
+/* Se han ocultado en la versión móvil los titulos que se mueven de Proyectos Destacados*/
+
+
+.Section-a--img {
+
+    width: 100%;
+
+    margin: 0 2rem;
+}
+
+/* Se ha definido un ancho de 100% y se ha utilizado margin auto para colocar la imagen centrada horizontalmente */
+
+.Section-h3--gym {
+
+    width: 100%;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    margin: 0 0 2rem 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+
+.Section-h3--gym {
+
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 0 2rem 0;
+
+
+}
+
+
+@media (max-width:800px) {
+
+    .Section-div--app {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+}
+
+/* Se ha colocado en la versión móvil la sección del proyecto destacado Your Own Way Gym */
+
+.Section-a--gym {
+
+    width: 100%;
+
+    display: block;
+    text-decoration: underline;
+
+
+}
+
+/* Se ha definido para los enlaces un subrayado para algunos enlaces*/
+
+@media (max-width:800px) {
+
+    .Section-div--bio {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .Section-h3 {
+        font-size: 1.5rem;
+    }
+
+    .Section-a {
+        font-size: 1rem;
+    }
+
+
+}
+
+/* Se ha colocado en la versión móvil la sección de la biografía en columnas y se ha ajustado el tamaño de la tipografía y los enlaces de ambas secciones*/
+
+
+
+
+/* Sección exclusiva de la versión móvil donde aparecen los proyectos del principio (de web, de UX / UI, de Branding...) */
+
+.Trabajos {
+
+    display: none;
+
+}
+
+/* Sección exclusiva de la versión móvil donde aparecen los proyectos del principio se oculta en mas de 800px */
+
+@media (max-width:800px) {
+
+    .Trabajos {
+
+        display: block;
+
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2rem;
+        margin-top: 3rem;
+
+        text-align: center;
+
+        border-bottom: 2px solid lightgrey;
+
+    }
+
+    .Trabajos-h2--titulo {
+
+        margin-bottom: 1rem;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+
+/* Se configura un estilo con font weight para el título de toda la sección */
+
+    .Trabajos-h2 {
+
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        
+
+    }
+
+
+
+    .Trabajos-img{
+
+        border-radius: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Se configura la sección de la versión móvil con los proyectos en formato columna, se reduce el tamañon de la tipografía y se añade padding */

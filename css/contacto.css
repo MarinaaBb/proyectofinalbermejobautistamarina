@@ -1,0 +1,205 @@
+.Div-formulario {
+
+    width: 100%;
+
+}
+
+
+
+.Div-biografia {
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+
+
+
+}
+
+/* Se ha definido un ancho de 100% para este contenedor padre y con flex se ha definido la distribución y alineación del contenido */
+
+@media (max-width:800px) {
+
+    .Div-biografia {
+
+        margin: 2rem 2rem;
+
+    }
+
+    .Div-p {
+
+        font-size: 0.9rem;
+
+    }
+
+    .Div-h2 {
+
+        font-size: 1.3rem;
+
+    }
+}
+
+
+/* Para un tamaño menor a 800px se ha configurado un margen por todos los lados de la sección y se ha reducido el tamaño de la tipografía */
+
+
+
+
+
+
+
+.Div-article {
+
+    width: 70%;
+    min-height: 20vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    margin: 0 2rem;
+
+    text-align: center;
+
+
+}
+
+/* Se ha definido un ancho de 100% para el article y se ha utilizado margin auto para colocarlo centrado horizontalmente */
+
+.Div-h2 {
+
+    margin-bottom: 2rem;
+}
+
+.Div-div {
+    background-color: ed;
+}
+
+/* Se sdf<grgrswgrgrreghregrhehrdeha definido un ancho de 100% para el article y se ha utilizado margin auto para colocarlo centrado horizontalmente */
+
+.Div-ul {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+/* Se ha utilizado display flex para configurar la distribución y alineación de la lista, en fila y centrada*/
+
+.Div-div--enlaces {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+
+.Div-icon {
+
+    max-width: 1rem;
+    max-height: 1rem;
+
+    flex-direction: row nowrap;
+}
+
+/* Se ha utilizado flex-direction para configurar que los iconos de las RRSS estén en fila y se ha establecido un tamaño máximo para los mismos*/
+
+
+.Formulario {
+
+    max-width: 50%;
+    background-color: lightgray;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    color: black;
+    margin: 2rem auto;
+    margin-bottom: 5rem;
+
+    gap: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+/* Se ha utilizado un ancho máximo de 50% para el formulario además de display flex para colocar los elementos en este caso en column y al centro*/
+
+
+.Checkbox {
+
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.Consulta {
+
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    background-color: white;
+}
+
+.Btn {
+
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+
+/* Se han añadido clases a las labels del formulario para alinear al centro los elementos interiores uno a uno además de separarlos con gap y añadir padding al botón */
+
+
+
+
+@media (max-width:800px) {
+
+
+    .Formulario {
+
+        max-width: 50%;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+
+        color: black;
+
+        margin-bottom: 3rem;
+
+        gap: 1rem;
+        padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+        border-radius: 1rem;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+
+
+    .Etiqueta {
+
+        font-size: 0.8rem;
+    }
+}
+
+/* En versiones de menos de 800px se ha configurado para el formulario una anchura máxima del 50%, display flex y en formato columna, además de haberse reducido los paddings y el tamaño de la tipografía de los labels*/

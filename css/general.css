@@ -1,0 +1,243 @@
+
+/* Se aplica el estilo general del Header*/
+.Header {
+
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    padding: 2rem 3rem 2rem;
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+/* Se ha establecido un ancho del 100% para el header, un dislay flex, con disposición en row y justificado con espacio entre los elementos de este*/
+
+
+@media(max-width: 800px) {
+
+    .Header {
+
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media(max-width: 800px) {
+
+    .Header-nav {
+
+        width: 100%;
+        display: none;
+    }
+
+    .Header-nav.isActive {
+
+        display: block;
+    }
+}
+
+.Header-menu {
+
+    color: white;
+
+    min-width: 1.5rem;
+    max-height: 1.5rem;
+}
+
+.Header-ul {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+@media(max-width: 800px) {
+
+    .Header-ul {
+
+        flex-direction: column;
+        gap: 1rem;
+
+        color: black;
+        background-color: lightgrey;
+    }
+
+}
+
+.Header-btn {
+
+    display: none;
+    color: beige;
+}
+
+@media(max-width: 800px) {
+
+    .Header-btn {
+
+        display: block;
+    }
+
+
+}
+
+/* Para tamaños menores a 800px se ha añadido un svg menú hamburguesa y se han colocado los enlaces principales en columna (con javascript se configura el click que muestra el menú con display block) */
+
+
+/* Fin de la aplicación del estilo general del Header*/
+
+
+/* Inicio de la aplicación del estilo general del Footer*/
+
+.Footer {
+
+    width: 100%;
+    min-height: 5vw;
+    background-color: black;
+
+    padding: 2rem 3rem 2rem;
+
+    color: white;
+}
+
+
+.Footer-section {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem auto;
+    gap: 5rem;
+}
+
+
+.Footer-ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    text-decoration: underline;
+
+}
+
+/* Se ha definido para los enlaces un subrayado para algunos enlaces*/
+
+
+.Footer-ul--enlaces {
+
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+@media(max-width: 800px) {
+
+    .Footer-article {
+
+        display: none;
+    }
+
+    .Footer-ul--enlaces {
+
+        font-size: 1rem;
+    }
+
+
+}
+
+/* Se ha ocultado el texto del footer en tamaños de menos de 800 px y se ha reducido el tamaño de la tipografía de los enlaces*/
+
+
+
+/* Versión móvil */
+
+@media(max-width: 500px) {
+
+    .Footer-article {
+
+        display: none;
+    }
+
+    .Footer-ul--enlaces {
+
+        font-size: 0.9rem;
+    }
+
+
+    .Footer-section {
+
+        gap: 2rem;
+    }
+
+    .Footer-a--logo {
+
+        max-width: 5rem;
+        max-height: 5rem;
+    }
+
+}
+
+
+/* Se ha ocultado el texto del footer en tamaños de menos de 400 px y se ha reducido el tamaño de la tipografía de los enlaces*/
+
+
+.Footer-icon {
+
+    max-width: 1rem;
+    max-height: 1rem;
+
+    color: white;
+
+}
+
+/* Fin de la aplicación del estilo general del Footer*/
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+/* Se han aplicado a todos los h2 el estilo configurado*/
+
+.Section-h2--destacados {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+/* Se ha aplicado al h2 de proyectos destacados */
+
+.h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+
+/* Se han aplicado a todos los h3 el estilo configurado*/
+
+.h4 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 12rem;
+
+}
+
+/* Se han aplicado a todos los h4 el estilo configurado*/

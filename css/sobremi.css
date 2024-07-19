@@ -1,0 +1,248 @@
+.Div-biografia {
+
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5rem;
+
+    gap: 3rem;
+
+
+}
+
+/* Se ha definido un ancho de 100% para este contenedor padre y con flex se ha definido la distribución y alineación del contenido */
+
+
+
+
+@media (max-width:800px) {
+
+    .Div-biografia {
+
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2rem;
+        margin-top: 3rem;
+
+        text-align: center;
+
+    }
+
+
+    .Div-p {
+
+        font-size: 0.9rem;
+
+    }
+
+    .Div-h2 {
+
+        font-size: 1.3rem;
+
+    }
+
+}
+
+/* Se ha configurado una disposición en columna para toda la sección de la biografía y se ha reducido el tamaño de la tipografía */
+
+
+
+.Div-img {
+    width: 100%;
+
+    background-color: lavenderblush;
+
+    margin: 0 2rem;
+
+    text-align: center;
+}
+
+/* Se ha definido un ancho de 100% para la imagen  y se ha utilizado margin auto para colocarla centrada horizontalmente */
+
+.Div-article {
+
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    gap: 2rem;
+    margin: 0 2rem;
+
+    text-align: center;
+
+
+}
+
+/* Se ha definido un ancho de 100% para el article y se ha utilizado margin auto para colocarlo centrado horizontalmente */
+
+.Div-h2 {
+
+    background-color: lightgray;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+/* Se ha añadido un color gris claro para el título de la presentación de la biografía */
+
+.Div-ul {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+/* Se ha utilizado display flex para configurar la distribución y alineación de la lista, en fila y centrada*/
+
+.Div-div--enlaces {
+   
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    text-decoration: underline;
+
+    gap: 2rem;
+}
+
+.Section-a--img {
+
+    width: 100%;
+    min-height: 30vw;
+
+
+    margin: 0 2rem;
+}
+
+.Section-img {
+
+    border-radius: 2rem;
+}
+
+
+.Div-icon {
+    flex-direction: row nowrap;
+}
+
+/* Se ha utilizado flex-direction para configurar que los iconos de las RRSS estén en fila y se ha establecido un tamaño máximo para los mismos*/
+
+.Bio-icon {
+
+    color: gray;
+}
+
+.Acordeon {
+
+    width: 100%;
+    min-height: 30vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    gap: 3rem;
+}
+
+/* Se ha definido un ancho de 100% para el contenedor padre y con flex se ha definido la distribución y alineación del contenido, en fila y centrado*/
+
+
+.Acordeon-section {
+
+    width: 100%;
+
+    padding: 1rem;
+}
+
+/* Se ha definido un ancho de 100% para el contenedor que contiene los dos articles y padding arriba, y  abajo, y, a la derecha e izquierda */
+
+.Acordeon-article {
+    background-color: white;
+
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 1rem 1rem 2rem;
+
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(173, 172, 172);
+}
+
+/* Se ha definido margin y padding en cada article para conseguir que el texto no este pegado a los bordes además de efectos visuales con box-shadow*/
+
+.Acordeon-h2 {
+
+    background-color: lightgrey;
+
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    font-weight: 600;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+
+
+.Acordeon-p {
+
+    height: 0px;
+    overflow: hidden;
+    padding-top: 1rem;
+
+    font-style: italic;
+
+    transition: height 1s ease;
+}
+
+/* Se ha definido que Acordeon-p (párrafos) tenga una altura de 0 px y se ha añadido un transition para crear un efecto visual en la apertura del p*/
+
+
+.Acordeon-p.isVisible {
+   
+    height: 100px;
+    overflow: hidden;
+}
+
+/* Se ha definido que a Acordeon-p (párrafos) cuando tenga la clase isVisible la altura será 100px para que se muestre el contenido de cada p */
+
+@media (max-width:800px) {
+
+
+    .Acordeon-article {
+
+        padding: 0.5rem;
+
+    }
+
+    .Acordeon-h2 {
+
+        font-size: 0.9rem;
+
+    }
+
+    .Acordeon-p {
+
+        font-size: 0.8rem;
+        padding-top: 0.1rem;
+
+    }
+}
+
+
+/* Se ha configurado que en menos de 800px se reduzca el padding del acordeón y los tamaños de la tipografía de este */

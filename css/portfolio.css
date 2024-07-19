@@ -1,0 +1,162 @@
+.Portfolio {
+
+
+    width: 100%;
+    min-height: 40vw;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5rem 0rem;
+
+    gap: 3rem;
+
+}
+
+/* Se ha definido un ancho de 100% para el contenedor Portfolio además de una disposición en fila para que los contenidos estén uno al lado del otro */
+
+
+@media (max-width:800px) {
+
+    .Portfolio {
+
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2rem;
+        margin-top: 3rem;
+
+        text-align: center;
+
+    }
+
+
+    .Portfolio-p {
+
+        font-size: 0.9rem;
+
+    }
+
+    .Portfolio-h2 {
+
+        font-size: 1.3rem;
+
+    }
+
+}
+
+/* Se ha configurado una disposición en columna para toda la sección de portfolio y se ha reducido el tamaño de la tipografía */
+
+
+
+
+.Portfolio-div--imagenes {
+
+    width: 100%;
+    min-height: 40vw;
+    margin: 2rem auto;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin: 0 2rem;
+    gap: 0.5rem;
+
+}
+
+
+
+.Portfolio-div--uno {
+ 
+
+    grid-row: span 2;
+}
+
+
+.Portfolio-div--tres {
+    grid-row: span 1;
+
+}
+
+/* Se ha utilizado grid-row span para conseguir que las imágenes hagan el efecto de cuadrícula con distinto tamaño */
+
+
+.Portfolio-h2 {
+
+    color: black;
+
+}
+
+
+
+.Portfolio-a {
+
+    text-decoration: underline;
+}
+
+.Portfolio-div--article {
+
+    width: 100%;
+    min-height: 30vw;
+    margin: 2rem auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+    margin: 0 2rem;
+
+
+}
+
+.Portfolio-div--reverse {
+
+    
+    width: 100%;
+    min-height: 40vw;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row-reverse;
+
+    margin: 5rem 0rem;
+
+    gap: 3rem;
+
+ background-color: lightgrey;
+}
+
+
+@media (max-width:800px) {
+
+    .Portfolio-div--reverse {
+
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2rem;
+        margin-top: 3rem;
+
+        text-align: center;
+
+    }
+
+}
+
+/* Se ha configurado una disposición en columna para la sección de Branding en row-reverse para tamaños inferiores a 800px*/
